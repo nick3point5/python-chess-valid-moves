@@ -12,6 +12,8 @@ class chess_piece:
         rank = position[1]
         if not (file in self.file_list) and not (rank in self.rank_list):
             print("invalid position")
+            self.file=None
+            self.rank=None
             return [self.file, self.rank]
 
         self.file = file
